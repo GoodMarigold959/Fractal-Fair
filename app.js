@@ -39,34 +39,34 @@ function animate() {
         {
             var livingFriends = 0;
             var xm1, xp1, ym1, yp1;
-//             if (x === 0) 
-//             {
-//                 xm1 = numCols - 1;
-//                 xp1 = x + 1;
-//             } 
-//             else if (x === numCols - 1) 
-//             {
-//                 xp1 = 0;
-//                 xm1 = x - 1;
-//             } else {
-//                 xm1 = x - 1;
-//                 xp1 = x + 1;
-//             }
+            if (x === 0) 
+            {
+                xm1 = numCols - 1;
+                xp1 = x + 1;
+            } 
+            else if (x === numCols - 1) 
+            {
+                xp1 = 0;
+                xm1 = x - 1;
+            } else {
+                xm1 = x - 1;
+                xp1 = x + 1;
+            }
 
-//             if (y === 0)
-//             {
-//                 ym1 = numRows - 1;
-//                 yp1 = y + 1;
-//             }
-//             else if (y ===numRows - 1)
-//             {
-//                 yp1 = 0;
-//                 ym1 = y - 1;
-//             } else 
-//             {
-//                 ym1 = y - 1;
-//                 yp1 = y + 1;
-//             }
+            if (y === 0)
+            {
+                ym1 = numRows - 1;
+                yp1 = y + 1;
+            }
+            else if (y ===numRows - 1)
+            {
+                yp1 = 0;
+                ym1 = y - 1;
+            } else 
+            {
+                ym1 = y - 1;
+                yp1 = y + 1;
+            }
             if (systemActive[ym1][xm1])
             {
                 livingFriends++;
